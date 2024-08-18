@@ -1,159 +1,113 @@
-# Домашнее задание к занятию "`Git`" - `Тен Денис`
+# Домашнее задание к занятию "`Системы контроля версий`" - `Тен Денис`
 
 
-### Инструкция по выполнению домашнего задания
+### Цель задания
 
-   1. Сделайте `fork` данного репозитория к себе в Github и переименуйте его по названию или номеру занятия, например, https://github.com/имя-вашего-репозитория/git-hw или  https://github.com/имя-вашего-репозитория/7-1-ansible-hw).
-   2. Выполните клонирование данного репозитория к себе на ПК с помощью команды `git clone`.
-   3. Выполните домашнее задание и заполните у себя локально этот файл README.md:
-      - впишите вверху название занятия и вашу фамилию и имя
-      - в каждом задании добавьте решение в требуемом виде (текст/код/скриншоты/ссылка)
-      - для корректного добавления скриншотов воспользуйтесь [инструкцией "Как вставить скриншот в шаблон с решением](https://github.com/netology-code/sys-pattern-homework/blob/main/screen-instruction.md)
-      - при оформлении используйте возможности языка разметки md (коротко об этом можно посмотреть в [инструкции  по MarkDown](https://github.com/netology-code/sys-pattern-homework/blob/main/md-instruction.md))
-   4. После завершения работы над домашним заданием сделайте коммит (`git commit -m "comment"`) и отправьте его на Github (`git push origin`);
-   5. Для проверки домашнего задания преподавателем в личном кабинете прикрепите и отправьте ссылку на решение в виде md-файла в вашем Github.
-   6. Любые вопросы по выполнению заданий спрашивайте в чате учебной группы и/или в разделе “Вопросы по заданию” в личном кабинете.
+В результате выполнения задания вы: 
+
+* научитесь подготоваливать новый репозиторий к работе;
+* сохранять, перемещать и удалять файлы в системе контроля версий.  
+
+
+### Чеклист готовности к домашнему заданию
+
+1. Установлена консольная утилита для работы с Git.
+
+
+### Инструкция к заданию
+
+1. Домашнее задание выполните в GitHub-репозитории. 
+2. В личном кабинете отправьте на проверку ссылку на ваш репозиторий с домашним заданием.
+3. Любые вопросы по решению задач задавайте в чате учебной группы.
+
+
+### Дополнительные материалы для выполнения задания
+
+1. [GitHub](https://github.com/).
+2. [Инструкция по установке Git](https://git-scm.com/downloads).
+3. [Книга про  Git на русском языке](https://git-scm.com/book/ru/v2/) - рекомендуем к обязательному изучению главы 1-7.
    
-Желаем успехов в выполнении домашнего задания!
    
-### Дополнительные материалы, которые могут быть полезны для выполнения задания
+------
 
-1. [Руководство по оформлению Markdown файлов](https://gist.github.com/Jekins/2bf2d0638163f1294637#Code)
+## Задание 1. Создать и настроить репозиторий для дальнейшей работы на курсе
 
----
+В рамках курса вы будете писать скрипты и создавать конфигурации для различных систем, которые необходимо сохранять для будущего использования. 
+Сначала надо создать и настроить локальный репозиторий, после чего добавить удалённый репозиторий на GitHub.
 
-### Задание 1
+### Создание репозитория и первого коммита
 
-#### Создание репозитория
-![Создание репозитория](https://github.com/killakazzak/8-1-git-hw/blob/main/img/2024-02-28_16-32-21.jpg)
+1. Зарегистрируйте аккаунт на [https://github.com/](https://github.com/). Если предпочитаете другое хранилище для репозитория, можно использовать его.
+2. Создайте публичный репозиторий, который будете использовать дальше на протяжении всего курса, желательное с названием `devops-netology`.
+   Обязательно поставьте галочку `Initialize this repository with a README`. 
+   
+    ![Диалог создания репозитория](img/github-new-repo-1.jpg)
+    
+3. Создайте [авторизационный токен](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) для клонирования репозитория.
+4. Склонируйте репозиторий, используя протокол HTTPS (`git clone ...`).
+ 
+    ![Клонирование репозитория](img/github-clone-repo-https.jpg)
+    
+5. Перейдите в каталог с клоном репозитория (`cd devops-netology`).
+6. Произведите первоначальную настройку Git, указав своё настоящее имя, чтобы нам было проще общаться, и email (`git config --global user.name` и `git config --global user.email johndoe@example.com`). 
+7. Выполните команду `git status` и запомните результат.
+8. Отредактируйте файл `README.md` любым удобным способом, тем самым переведя файл в состояние `Modified`.
+9. Ещё раз выполните `git status` и продолжайте проверять вывод этой команды после каждого следующего шага. 
+10. Теперь посмотрите изменения в файле `README.md`, выполнив команды `git diff` и `git diff --staged`.
+11. Переведите файл в состояние `staged` (или, как говорят, просто добавьте файл в коммит) командой `git add README.md`.
+12. И ещё раз выполните команды `git diff` и `git diff --staged`. Поиграйте с изменениями и этими командами, чтобы чётко понять, что и когда они отображают. 
+13. Теперь можно сделать коммит `git commit -m 'First commit'`.
+14. И ещё раз посмотреть выводы команд `git status`, `git diff` и `git diff --staged`.
 
-```
-git clone https://github.com/killakazzak/netology.git
-```
-![(https://github.com/killakazzak/8-1-git-hw/blob/main/img/1.jpg)](https://github.com/killakazzak/8-1-git-hw/blob/main/img/1.png)
-```
-git config --global user.name "Denis Ten"
-git config --global user.email "denis.a.ten@gmail.com"
-git status
-```
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/2.png)
-```
-echo "Hello World!" >> README.md
-git status
-```
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/3.png)
-```
-git diff
-```
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/4.png)
+### Создание файлов `.gitignore` и второго коммита
 
-```
-git add README.md
-git diff --staged
-git status
-```
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/6.png)
-```
-git commit -m 'First commit'
-```
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/7.png)
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/8.png)
-```
-git remote set-url origin https://killakazzak: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@github.com/killakazzak/netology.git
-git push origin main
-```
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/9.png)
+1. Создайте файл `.gitignore` (обратите внимание на точку в начале файла), проверьте его статус сразу после создания. 
+1. Добавьте файл `.gitignore` в следующий коммит (`git add...`).
+1. На одном из следующих блоков вы будете изучать `Terraform`, давайте сразу создадим соотвествующий каталог `terraform` и внутри этого каталога — файл `.gitignore` по примеру: https://github.com/github/gitignore/blob/master/Terraform.gitignore.  
+1. В файле `README.md` опишите своими словами, какие файлы будут проигнорированы в будущем благодаря добавленному `.gitignore`.
+1. Закоммитьте все новые и изменённые файлы. Комментарий к коммиту должен быть `Added gitignore`.
 
-[Ссылка на commit](https://github.com/killakazzak/netology/commit/22f3d2506c1b15c3ab6f0682a188c405f8e54892)
+### Эксперимент с удалением и перемещением файлов (третий и четвёртый коммит)
 
----
+1. Создайте файлы `will_be_deleted.txt` (с текстом `will_be_deleted`) и `will_be_moved.txt` (с текстом `will_be_moved`) и закоммите их с комментарием `Prepare to delete and move`.
+1. В случае необходимости обратитесь к [официальной документации](https://git-scm.com/book/ru/v2/Основы-Git-Запись-изменений-в-репозиторий) — здесь подробно описано, как выполнить следующие шаги. 
+1. Удалите файл `will_be_deleted.txt` с диска и из репозитория. 
+1. Переименуйте (переместите) файл `will_be_moved.txt` на диске и в репозитории, чтобы он стал называться `has_been_moved.txt`.
+1. Закоммитьте результат работы с комментарием `Moved and deleted`.
 
-### Задание 2
+### Проверка изменения
 
-```
-touch .gitignore
-git status
-```
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/21.png)
-```
-git add .gitignore
-git status
-```
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/22.png)
-```
-echo "*.pyc" >> .gitignore && echo "cache/" >> .gitignore
-```
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/23.png)
-```
-git add .gitignore
-git commit -m "Second Commit"
-```
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/24.png)
-```
-git push origin main
-```
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/25.png)
+1. В результате предыдущих шагов в репозитории должно быть как минимум пять коммитов (если вы сделали ещё промежуточные — нет проблем):
+    * `Initial Commit` — созданный GitHub при инициализации репозитория. 
+    * `First commit` — созданный после изменения файла `README.md`.
+    * `Added gitignore` — после добавления `.gitignore`.
+    * `Prepare to delete and move` — после добавления двух временных файлов.
+    * `Moved and deleted` — после удаления и перемещения временных файлов. 
+2. Проверьте это, используя комманду `git log`. Подробно о формате вывода этой команды мы поговорим на следующем занятии, но посмотреть, что она отображает, можно уже сейчас.
 
-[Ссылка на README.md](https://github.com/killakazzak/netology/blob/0d2269d19d0a4587a9e5c471208812acfdc84ecc/README.md)
+### Отправка изменений в репозиторий
 
-### Задание 3
-```
-git branch dev
-git checkout dev
-```
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/31.png)
-```
-echo "Всем привет!" > test.sh
-git add test.sh
-git commit -m "Commit message"
-```
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/32.png)
-```
-git checkout main
-```
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/33.png)
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/34.png)
+Выполните команду `git push`, если Git запросит логин и пароль — введите ваши логин и пароль от GitHub. 
 
-```
-git merge dev
-```
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/35.png)
-```
-git pull
-git push
-```
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/36.png)
+В качестве результата отправьте ссылку на репозиторий. 
 
-[Ссылка на граф](https://github.com/killakazzak/netology/network)
-### Задание 4
-```
-git branch conflict
-git checkout conflict
-```
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/41.png)
-```
-git add test.sh
-git commit -m "conflict commit"
-```
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/42.png)
-```
-git push origin conflict
-```
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/43.png)
-```
-git add test.sh
-git commit -m "commit temp"
-git push origin main
-git merge conflict
-git add test.sh
-git commit -m "Resolved conflict in test.sh"
-git push origin main
-```
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/44.png)
-![](https://github.com/killakazzak/8-1-git-hw/blob/main/img/45.png)
+----
 
-[Ссылка на файл test.sh](https://github.com/killakazzak/netology/blob/main/test.sh)
+### Правила приёма домашнего задания
+
+В личном кабинете отправлена ссылка на ваш репозиторий.
 
 
+### Критерии оценки
 
+Зачёт:
 
+* выполнены все задания;
+* ответы даны в развёрнутой форме;
+* приложены соответствующие скриншоты и файлы проекта;
+* в выполненных заданиях нет противоречий и нарушения логики.
+
+На доработку:
+
+* задание выполнено частично или не выполнено вообще;
+* в логике выполнения заданий есть противоречия и существенные недостатки. 
