@@ -100,7 +100,10 @@ git config --list --show-origin
 
 8. Выполните команду `git status` и запомните результат.
 
-
+```bash
+git status
+```
+![image](https://github.com/user-attachments/assets/4a461287-4a04-4167-a736-17ac1bd096e7)
 
 
 ### Создание файлов `.gitignore` и второго коммита
