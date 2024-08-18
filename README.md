@@ -48,9 +48,7 @@
  
     ![Клонирование репозитория](https://github.com/netology-code/sysadm-homeworks/blob/devsys10/02-git-01-vcs/img/github-clone-repo-https.jpg)
 
-```bash
-git clone https://github.com/killakazzak/devops-netology.git
-```
+
 
 
 6. Перейдите в каталог с клоном репозитория (`cd devops-netology`).
@@ -78,6 +76,10 @@ git clone https://github.com/killakazzak/devops-netology.git
 
 4. Склонируйте репозиторий, используя протокол HTTPS (`git clone ...`).
 ![Клонирование репозитория](https://github.com/user-attachments/assets/2d2295f3-64a1-41a6-8f05-1587738ecb70)
+
+```bash
+git clone https://github.com/killakazzak/devops-netology.git
+```
 
 ### Создание файлов `.gitignore` и второго коммита
 
