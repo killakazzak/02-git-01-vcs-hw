@@ -72,8 +72,7 @@
 ![Создание авторизационного токена](https://github.com/user-attachments/assets/9947af65-53b1-42ed-b0fe-f3334aa107eb)
 
 4. Склонируйте репозиторий, используя протокол HTTPS (`git clone ...`).
-![Клонирование репозитория](https://github.com/user-attachments/assets/a20ab532-0233-4323-be96-469279c2e09f)
-
+![Клонирование репозитория](https://github.com/user-attachments/assets/2d2295f3-64a1-41a6-8f05-1587738ecb70)
 
 ### Создание файлов `.gitignore` и второго коммита
 
