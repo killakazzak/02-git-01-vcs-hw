@@ -139,6 +139,10 @@ git diff --staged
 
 ![image](https://github.com/user-attachments/assets/f0ade6db-3bf1-4b4c-9637-c8304d7fc547)
 
+```bash
+git status
+```
+![image](https://github.com/user-attachments/assets/c5c06233-37cf-4360-8808-7d561896f51a)
 
 
 ### Создание файлов `.gitignore` и второго коммита
