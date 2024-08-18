@@ -80,9 +80,9 @@
 ```bash
 git clone https://github.com/killakazzak/devops-netology.git
 ```
-```bash
+
 ![image](https://github.com/user-attachments/assets/cedfebdd-420e-4a14-848a-0f8a7b50e36b)
-```
+
 
 
 ### Создание файлов `.gitignore` и второго коммита
