@@ -43,7 +43,7 @@
 
 ![Диалог создания репозитория] (https://github.com/netology-code/sysadm-homeworks/blob/devsys10/02-git-01-vcs/img/github-new-repo-1.jpg?raw=true)
 
-[    ![Диалог создания репозитория]([img/github-new-repo-1.jpg)](https://github.com/netology-code/sysadm-homeworks/raw/devsys10/02-git-01-vcs/img/github-new-repo-1.jpg](https://github.com/netology-code/sysadm-homeworks/blob/devsys10/02-git-01-vcs/img/github-new-repo-1.jpg?raw=true))
+[![Диалог создания репозитория]([[img/github-new-repo-1.jpg](https://github.com/netology-code/sysadm-homeworks/blob/devsys10/02-git-01-vcs/img/github-new-repo-1.jpg))]
     
 3. Создайте [авторизационный токен](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) для клонирования репозитория.
 4. Склонируйте репозиторий, используя протокол HTTPS (`git clone ...`).
