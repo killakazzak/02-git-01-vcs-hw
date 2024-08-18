@@ -105,6 +105,14 @@ git status
 ```
 ![image](https://github.com/user-attachments/assets/4a461287-4a04-4167-a736-17ac1bd096e7)
 
+9. Отредактируйте файл `README.md` любым удобным способом, тем самым переведя файл в состояние `Modified`.
+10. Ещё раз выполните `git status` и продолжайте проверять вывод этой команды после каждого следующего шага. 
+
+![image](https://github.com/user-attachments/assets/cf3bfe1b-22e2-482e-831a-7b4a73be8805)
+
+11. Теперь посмотрите изменения в файле `README.md`, выполнив команды `git diff` и `git diff --staged`.
+
+
 
 ### Создание файлов `.gitignore` и второго коммита
 
