@@ -111,7 +111,11 @@ git status
 ![image](https://github.com/user-attachments/assets/cf3bfe1b-22e2-482e-831a-7b4a73be8805)
 
 11. Теперь посмотрите изменения в файле `README.md`, выполнив команды `git diff` и `git diff --staged`.
-
+```bash
+git diff
+git diff --staged
+```
+![image](https://github.com/user-attachments/assets/d20b018c-7d54-44f2-9d5e-871716a48b76)
 
 
 ### Создание файлов `.gitignore` и второго коммита
