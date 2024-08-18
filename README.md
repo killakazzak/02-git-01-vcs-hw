@@ -84,6 +84,24 @@ git clone https://github.com/killakazzak/devops-netology.git
 ![image](https://github.com/user-attachments/assets/cedfebdd-420e-4a14-848a-0f8a7b50e36b)
 
 
+6. Перейдите в каталог с клоном репозитория (`cd devops-netology`).
+   
+![image](https://github.com/user-attachments/assets/64d3954a-2334-479e-9e48-3584033e5323)
+
+7. Произведите первоначальную настройку Git, указав своё настоящее имя, чтобы нам было проще общаться, и email (`git config --global user.name` и `git config --global user.email johndoe@example.com`).
+
+```bash
+git config --global user.name "Denis Ten"
+git config --global user.email denis.a.ten@gmail.com
+git config --list --show-origin
+```
+![image](https://github.com/user-attachments/assets/e645e15c-5d84-4612-86db-6eea257ebe89)
+
+
+8. Выполните команду `git status` и запомните результат.
+
+
+
 
 ### Создание файлов `.gitignore` и второго коммита
 
