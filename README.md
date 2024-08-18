@@ -69,6 +69,9 @@
 
 3. Создайте [авторизационный токен](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) для клонирования репозитория.
 
+![Создание авторизационного токена](https://github.com/user-attachments/assets/9947af65-53b1-42ed-b0fe-f3334aa107eb)
+
+
 
 ### Создание файлов `.gitignore` и второго коммита
 
