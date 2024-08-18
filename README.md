@@ -41,7 +41,7 @@
 2. Создайте публичный репозиторий, который будете использовать дальше на протяжении всего курса, желательное с названием `devops-netology`.
    Обязательно поставьте галочку `Initialize this repository with a README`. 
 
-https://github.com/netology-code/sysadm-homeworks/blob/devsys10/02-git-01-vcs/img/github-new-repo-1.jpg?raw=true
+[Диалог создания репозитория] (https://github.com/netology-code/sysadm-homeworks/blob/devsys10/02-git-01-vcs/img/github-new-repo-1.jpg?raw=true)
 
 [    ![Диалог создания репозитория]([img/github-new-repo-1.jpg)](https://github.com/netology-code/sysadm-homeworks/raw/devsys10/02-git-01-vcs/img/github-new-repo-1.jpg](https://github.com/netology-code/sysadm-homeworks/blob/devsys10/02-git-01-vcs/img/github-new-repo-1.jpg?raw=true))
     
