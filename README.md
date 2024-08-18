@@ -120,6 +120,19 @@ git diff --staged
 12. Переведите файл в состояние `staged` (или, как говорят, просто добавьте файл в коммит) командой `git add README.md`.
 13. И ещё раз выполните команды `git diff` и `git diff --staged`. Поиграйте с изменениями и этими командами, чтобы чётко понять, что и когда они отображают.
 
+```bash
+git add README.md
+git diff
+git diff --staged
+```
+
+![image](https://github.com/user-attachments/assets/06ed66f5-f889-4555-a566-a2457f81d543)
+
+14. Теперь можно сделать коммит `git commit -m 'First commit'`.
+15. И ещё раз посмотреть выводы команд `git status`, `git diff` и `git diff --staged`.
+
+
+
 
 ### Создание файлов `.gitignore` и второго коммита
 
