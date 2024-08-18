@@ -131,6 +131,13 @@ git diff --staged
 14. Теперь можно сделать коммит `git commit -m 'First commit'`.
 15. И ещё раз посмотреть выводы команд `git status`, `git diff` и `git diff --staged`.
 
+```bash
+git commit -m 'First commit'
+git diff
+git diff --staged
+```
+
+![image](https://github.com/user-attachments/assets/f0ade6db-3bf1-4b4c-9637-c8304d7fc547)
 
 
 
